@@ -1,29 +1,49 @@
-<div id ="bck" class="container-fluid">
-  <div class="row">
-    <br><br>
-    <div class="col-sm-2"></div>
-    <div id="page">
-      <div id="main-content" class="col-sm-10">
-        <form id="tempUnit" method="post">
-          <div id="unitButtons" class="btn-group" data-toggle="buttons">
-            <label class="btn btn-primary active">
-    <input type="radio" name="options" id="celsius" autocomplete="off" value = "c" checked> Celsius
-  </label>
-            <label class="btn btn-primary">
-    <input type="radio" name="options" id="fahrenheit" value = "f" autocomplete="off"> Fahrenheit
-  </label>
-          </div>
-        </form>
-        <div>
-          <div class="loading">
-            <h2>Loading...</div>
-    <div id = "words">
-            <div id="weather"></div>
-    <div id="temp"></div>
-    <div><br><span id="coords"></span></div>
-    </div>
-    </div>
-        </div>
-  </div>
-</div>
-  </div>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Arimo:700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <div id="bck" class="container-fluid">
+        <div class="row">
+            <br>
+            <br>
+            <div class="col-md-2"></div>
+            <div id="page">
+                <div id="main-content" class="col-md-10">
+                    <form id="tempUnit" method="post">
+                        <div id="unitButtons" class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-primary active">
+                                <input type="radio" name="options" id="celsius" autocomplete="off" value="c" checked>&deg;C
+                            </label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="options" id="fahrenheit" value="f" autocomplete="off">&deg;F
+                            </label>
+                        </div>
+                    </form>
+                    <div id="api-content">
+                        <div class="loading">
+                            <h2>Loading...</h2>
+                        </div>
+                        <div id = "words">
+                        <div id="weather"></div>
+                        <div id="temperature"></div>
+                        <div><br><span id="coords"></span></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
